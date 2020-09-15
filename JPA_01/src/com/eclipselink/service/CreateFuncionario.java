@@ -11,14 +11,14 @@ public class CreateFuncionario {
 static Funcionario funcionario = new Funcionario( ); 
 public static void main (String[] args) {
 
- EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "JPA_01" );
+	 EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "JPA_01" );
       
      EntityManager entitymanager = emfactory.createEntityManager( );
      entitymanager.getTransaction( ).begin( );
          
      entradaDados();
      
-     entitymanager.persist( funcionario );
+     entitymanager.persist( funcionario ); // Insert SQL
      entitymanager.getTransaction( ).commit( );
 
      entitymanager.close( );
