@@ -1,5 +1,4 @@
 package com.eclipselink.service;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -18,7 +17,7 @@ public static void main (String[] args) {
          
      entradaDados();
      
-     entitymanager.persist( funcionario ); // Insert SQL
+     entitymanager.persist( funcionario );
      entitymanager.getTransaction( ).commit( );
 
      entitymanager.close( );

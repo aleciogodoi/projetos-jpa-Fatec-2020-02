@@ -1,0 +1,7 @@
+package com.eclipselink.entity;
+
+public class Pessoa {
+	String CPF;
+	String nome;
+
+}

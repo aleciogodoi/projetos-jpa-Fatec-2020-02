@@ -1,0 +1,21 @@
+package com.eclipselink.service;
+
+import java.util.ArrayList;
+
+import com.eclipselink.entity.Pessoa;
+
+public class TestePessoa {
+
+	public static void main(String[] args) {
+		ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
+		pessoas.add(new Pessoa("212121","Alécio"));
+		pessoas.add(new Pessoa("213244","Maria"));
+		pessoas.add(new Pessoa("66666","Pedro"));
+		pessoas.add(new Pessoa("212121","Ana"));
+		
+		pessoas.get(0).CPF;
+		
+ 		
+	}
+
+}
