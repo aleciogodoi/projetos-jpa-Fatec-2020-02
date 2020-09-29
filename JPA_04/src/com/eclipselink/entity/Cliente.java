@@ -16,7 +16,7 @@ import javax.persistence.Table;
 @Inheritance( strategy = InheritanceType.TABLE_PER_CLASS )
 public abstract class Cliente implements Serializable {
 	
-	@GeneratedValue( strategy = GenerationType.AUTO )
+	//@GeneratedValue( strategy = GenerationType.AUTO )
 
 	@Id
 	private int idCliente;
