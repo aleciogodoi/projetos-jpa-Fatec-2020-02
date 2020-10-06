@@ -10,7 +10,7 @@ import com.eclipselink.entity.Funcionario;
 public class ManyToOne {
 	public static void main(String[] args) {
 
-		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("JPA_01");
+		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("JPA_06");
 		EntityManager entitymanager = emfactory.createEntityManager();
 		entitymanager.getTransaction().begin();
 

@@ -1,6 +1,9 @@
 package com.eclipselink.entity;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Departamento {
@@ -14,11 +17,14 @@ public class Departamento {
 		super();
 	}
 	
+	@OneToMany( targetEntity = Funcionario.class )
+	private List funcionario;
 	
-	public Departamento(int idDepto, String nomeDepto) {
+	public Departamento(int idDepto, String nomeDepto, List funcionario) {
 		super();
 		this.idDepto = idDepto;
 		this.nomeDepto = nomeDepto;
+		this.funcionario = funcionario;
 	}
 
 
