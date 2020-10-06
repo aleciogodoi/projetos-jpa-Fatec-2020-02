@@ -5,12 +5,15 @@
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="javax.persistence.NamedQueries"/>
     <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="com.eclipselink.entity.Pessoa"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
-    <fullyQualifiedTypeName name="javax.persistence.Table"/>
     <fullyQualifiedTypeName name="javax.persistence.DiscriminatorColumn"/>
     <fullyQualifiedTypeName name="javax.persistence.PrimaryKeyJoinColumn"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.eclipselink.entity.Aluno"/>
+    <fullyQualifiedTypeName name="com.eclipselink.entity.Usuario"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="com.eclipselink.entity.Pessoa"/>
+    <fullyQualifiedTypeName name="com.eclipselink.entity.Cliente"/>
 </qualifiedTypeNameHistroy>

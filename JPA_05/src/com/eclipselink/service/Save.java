@@ -13,7 +13,7 @@ import com.eclipselink.entity.Usuario;
 public class Save {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("JPA_04");
+		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("JPA_05");
 		EntityManager entitymanager = emfactory.createEntityManager();
 		entitymanager.getTransaction().begin();
 
