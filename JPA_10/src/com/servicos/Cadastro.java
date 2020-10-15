@@ -4,7 +4,11 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+
+import com.entidades.Pessoa;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -13,6 +17,8 @@ public class Cadastro {
 
 	private JFrame frame;
 	private JTextField txtIdPessoa;
+	private JTextField txtNome;
+	private JTextField txtCPF;
 
 	/**
 	 * Launch the application.
@@ -55,12 +61,40 @@ public class Cadastro {
 		frame.getContentPane().add(txtIdPessoa);
 		txtIdPessoa.setColumns(10);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnPesquisar = new JButton("Pesquisar");
+		btnPesquisar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				Pessoa pessoa = findId();
+				txtIdPessoa.setText(String.valueOf(pessoa.getIdPessoa()));
+				txtCPF.setText(pessoa.getCpf());
+				txtNome.setText(pessoa.getNome());
 			}
 		});
-		btnNewButton.setBounds(44, 227, 89, 23);
-		frame.getContentPane().add(btnNewButton);
+		btnPesquisar.setBounds(44, 227, 111, 23);
+		frame.getContentPane().add(btnPesquisar);
+		
+		JLabel lblNome = new JLabel("Nome");
+		lblNome.setBounds(44, 63, 65, 14);
+		frame.getContentPane().add(lblNome);
+		
+		txtNome = new JTextField();
+		txtNome.setColumns(10);
+		txtNome.setBounds(106, 60, 297, 20);
+		frame.getContentPane().add(txtNome);
+		
+		JLabel lblCpf = new JLabel("CPF");
+		lblCpf.setBounds(210, 32, 65, 14);
+		frame.getContentPane().add(lblCpf);
+		
+		txtCPF = new JTextField();
+		txtCPF.setColumns(10);
+		txtCPF.setBounds(245, 32, 158, 20);
+		frame.getContentPane().add(txtCPF);
+	}
+	
+	public static Pessoa findId() {
+		int id = Integer.valueOf(JOptionPane.showInputDialog("Id Pessoa"));
+		Pessoa pessoa = Dao.findPessoaId(id);
+		return pessoa;
 	}
 }
